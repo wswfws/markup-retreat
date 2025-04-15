@@ -1,1 +1,25 @@
-/* Пиши стили тут */
+
+input {
+    visibility: hidden;
+}
+
+input:checked ~ label {
+    background-image: url("img/star.png");
+    background-size: 100%;
+}
+
+input:hover ~ label {
+    background-image: url("img/star.png");
+    background-size: 100%;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    width: max-content;
+}
+
+.star-rating img{
+    max-width: max-content;
+    height: 50px;
+}
